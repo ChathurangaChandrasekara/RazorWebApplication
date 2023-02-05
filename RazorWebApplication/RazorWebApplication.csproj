@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RazorWebApplication.Models\RazorWebApplication.Models.csproj" />
+    <ProjectReference Include="..\RazorWebApplication.Services\RazorWebApplication.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Program.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorWebApplication", "RazorWebApplication\RazorWebApplication.csproj", "{2C6115F9-5444-45B2-ABF4-3A8A64F3D71B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorWebApplication.Models", "RazorWebApplication.Models\RazorWebApplication.Models.csproj", "{DACF699D-AA52-4DD0-B159-8C5218D140DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorWebApplication.Services", "RazorWebApplication.Services\RazorWebApplication.Services.csproj", "{D8E3A162-6812-49C9-8E75-C09D046CF549}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{2C6115F9-5444-45B2-ABF4-3A8A64F3D71B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C6115F9-5444-45B2-ABF4-3A8A64F3D71B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C6115F9-5444-45B2-ABF4-3A8A64F3D71B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACF699D-AA52-4DD0-B159-8C5218D140DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACF699D-AA52-4DD0-B159-8C5218D140DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACF699D-AA52-4DD0-B159-8C5218D140DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACF699D-AA52-4DD0-B159-8C5218D140DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E3A162-6812-49C9-8E75-C09D046CF549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E3A162-6812-49C9-8E75-C09D046CF549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E3A162-6812-49C9-8E75-C09D046CF549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E3A162-6812-49C9-8E75-C09D046CF549}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
