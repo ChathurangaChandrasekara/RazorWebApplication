@@ -20,6 +20,12 @@ namespace RazorWebApplication.Services
                 new Employee(){ Id = 4, Name = "David", Department = Dept.Payroll, Email = "david@gmail.com" },
             };
         }
+
+        public Employee EmployeeGetById(int id)
+        {
+            return _employees.FirstOrDefault(x => x.Id == id);
+        }
+
         public IEnumerable<Employee> GetAll()
         {
             return _employees;
