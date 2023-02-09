@@ -5,11 +5,11 @@ using RazorWebApplication.Services;
 
 namespace RazorWebApplication.Pages.Employees
 {
-    public class DetailsModel : PageModel
+    public class EditModel : PageModel
     {
         private readonly IEmployeeRepository employeeRepository;
 
-        public DetailsModel(IEmployeeRepository employeeRepository)
+        public EditModel(IEmployeeRepository employeeRepository)
         {
             this.employeeRepository = employeeRepository;
         }
@@ -19,7 +19,7 @@ namespace RazorWebApplication.Pages.Employees
         public IActionResult OnGet(int id)
         {
             Employee = employeeRepository.EmployeeGetById(id);
-            if(Employee==null)
+            if (Employee == null)
             {
                 return RedirectToPage("/NotFound");
             }
