@@ -20,6 +20,11 @@ namespace RazorWebApplication.Pages.Employees
         [BindProperty]
         public IFormFile Photo { get; set; }
 
+        [BindProperty]
+        public bool Notify { get; set; }
+
+        public string Message { get; set; }
+
         public IActionResult OnGet(int id)
         {
             Employee = employeeRepository.EmployeeGetById(id);
@@ -42,6 +47,20 @@ namespace RazorWebApplication.Pages.Employees
             }
             Employee = employeeRepository.Update(employee);
             return RedirectToPage("Index");
+        }
+
+        public IActionResult OnPostUpdateNotificationPreferences(int id)
+        {
+            if(Notify) 
+            {
+                Message = "Thank you for turning on notifications";
+            }
+            else
+            {
+                Message = "You have turned off email notification";
+            }
+            TempData["message"] = Message;
+            return RedirectToPage("Details", new { id = id});
         }
         private string ProcessUploadedFile()
         {

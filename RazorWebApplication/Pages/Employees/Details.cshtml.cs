@@ -13,7 +13,8 @@ namespace RazorWebApplication.Pages.Employees
         {
             this.employeeRepository = employeeRepository;
         }
-
+        [TempData]
+        public string Message { get; set; }
         public Employee Employee { get; private set; }
 
         public IActionResult OnGet(int id)
