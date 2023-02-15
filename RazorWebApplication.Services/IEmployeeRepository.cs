@@ -6,5 +6,6 @@ namespace RazorWebApplication.Services
     {
         IEnumerable<Employee> GetAll();
         Employee EmployeeGetById(int id);
+        Employee Update(Employee updatedEmployee);
     }
 }

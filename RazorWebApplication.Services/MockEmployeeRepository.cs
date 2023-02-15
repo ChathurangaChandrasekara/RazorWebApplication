@@ -30,5 +30,19 @@ namespace RazorWebApplication.Services
         {
             return _employees;
         }
+
+        public Employee Update(Employee updatedEmployee)
+        {
+            Employee employee = _employees.FirstOrDefault(x => x.Id == updatedEmployee.Id);
+
+            if(employee!=null)
+            {
+                employee.Name = updatedEmployee.Name;
+                employee.Email = updatedEmployee.Email;
+                employee.Department= updatedEmployee.Department;
+                employee.PhotoPath = updatedEmployee.PhotoPath;
+            }
+            return employee;
+        }
     }
 }

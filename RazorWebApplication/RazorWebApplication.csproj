@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RazorWebApplication.Models\RazorWebApplication.Models.csproj" />
     <ProjectReference Include="..\RazorWebApplication.Services\RazorWebApplication.Services.csproj" />
   </ItemGroup>
